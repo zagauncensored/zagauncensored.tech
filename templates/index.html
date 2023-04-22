@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaga Uncensored</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js"></script>
+</head>
+
+<body>
+
+    <div class="title-section smooth-scroll">
+        <div class="title-text">GONZAGA</div>
+        <div class="uncensored-text">UNCENSORED</div>
+    </div>
+
+    <div class="parallax smooth-scroll">
+        <div class="parallax-text">
+            Take a stand against  <span class="typed-text"></span>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="container">
+            <div class="about-section">
+                <h2>About Zaga Uncensored</h2>
+                <p>
+                    Zaga Uncensored is a movement powered by the students of our school, aiming to create a positive change in our educational environment. Our goal is to ensure that every student's voice is heard, and to work together to address the issues that affect our education and well-being.
+                </p>
+            </div>
+
+            <div class="objectives-section">
+                <h2>Our Objectives</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-title">Defeat censorship</h5>
+                            <p class="card-text">Allowing students to speak freely without fear of unjust punishment that may violate their fundamental freedom of expression.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-title">Introduce transparency</h5>
+                            <p class="card-text">Encouraging faculty to be more transparent about data safety, mark calculations, school operations and more.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h5 class="card-title">Establish democracy</h5>
+                            <p class="card-text">Getting students involved in decisions regarding their own education and giving them the power to make those decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="join-section">
+                <h2>Join the Movement</h2>
+                <p>
+                    If you are passionate about creating a better future for our school, we invite you to join Zaga Uncensored. Together, we can make a difference and create lasting change for the betterment of our school and community.
+                </p>
+                <a href="https://instagram.com/zagauncensored" class="btn btn-primary">Contact Us</a>
+                <button class="btn btn-primary" id="reviewButton">Review Staff</button>
+            </div>
+        </div>
+    </div>
+    <div id="reviewPopup" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Review Staff</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="searchStaffSection">
+                        <input type="text" id="searchStaffInput" class="form-control" placeholder="Search for staff..." />
+                        <div id="staffList" class="list-group mt-2"></div>
+                    </div>
+                    <div id="reviewSection" style="display: none;">
+                        <div class="review-popup-content">
+                            <div>
+                                <p id="selectedStaffName" class="font-weight-bold"></p>
+                                <input type="email" id="studentEmailInput" class="form-control" placeholder="Your school email..." required />
+                                <textarea id="reviewText" class="form-control mt-2" rows="3" placeholder="Write your review..."></textarea>
+                                <input type="number" id="ratingInput" class="form-control mt-2" placeholder="Rating (1-10)" min="1" max="10" step="0.1" required readonly onfocus="this.removeAttribute('readonly');" />
+                                <button id="submitReviewButton" class="btn btn-primary mt-2">Submit Review</button>
+                            </div>
+                            <div id="reviewList" class="review-list"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="backButton" class="btn btn-secondary">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2023 Zaga Uncensored All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

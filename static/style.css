@@ -1,0 +1,295 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.title-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.title-text {
+    font-size: 6vw;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+}
+
+.uncensored-text {
+    font-size: 4vw;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+}
+
+.uncensored-text::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    transform-origin: right;
+    transform: scaleX(1);
+    transition: transform 1s;
+}
+
+.parallax {
+    background-image: url("https://static01.nyt.com/images/2021/05/15/world/15israel-gaza-briefing-washington-protest/15israel-gaza-briefing-washington-protest-facebookJumbo.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: white;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.typed-text {
+    border-right: 2px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    color: #EE293A;
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+.content-section {
+    padding: 50px 0;
+}
+
+.about-section {
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    font-family: Montserrat, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.objectives-section {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+
+.objectives-section h2, .about-section h2,
+.join-section h2 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.objectives-section .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.objectives-section .card-title {
+    font-weight: bold;
+}
+
+.join-section {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.join-section p {
+    font-size: 1.2em;
+    font-family: Montserrat, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.join-section .btn {
+    font-size: 1.5em;
+    padding: 10px 30px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.review-popup-content {
+    display: flex;
+}
+
+.review-list {
+    overflow-y: auto;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.review-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.review-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.review-list-item {
+    margin-bottom: 10px;
+}
+
+.review-list-item .rating {
+    font-weight: bold;
+}
+
+.review-list-item .rating.red {
+    color: red;
+}
+
+.review-list-item .rating.yellow {
+    color: yellow;
+}
+
+.review-list-item .rating.green {
+    color: green;
+}
+
+.review-details {
+    margin-bottom: 10px;
+}
+
+.review-details .staff-email {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.review-details .avg-rating {
+    font-weight: bold;
+}
+
+.review-details .avg-rating.red {
+    color: red;
+}
+
+.review-details .avg-rating.yellow {
+    color: yellow;
+}
+
+.review-details .avg-rating.green {
+    color: green;
+}
+
+.review-divider {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.review-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-section .form-control {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-section .btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.review-popup-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-popup-content > div {
+    flex-basis: 48%;
+}
+
+.review-list {
+    overflow-y: auto;
+    height: 400px;
+    margin-left: 0;
+}
+
+.review-list-item hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+@media (max-width: 576px) {
+    .title-text {
+        font-size: 10vw;
+    }
+
+    .uncensored-text {
+        font-size: 6vw;
+    }
+
+    .parallax-text {
+        font-size: 6vw;
+    }
+}
+
+.modal-dialog {
+    max-width: 80%;
+}
+
+@media (max-width: 992px) {
+    .modal-dialog {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 95%;
+    }
+}
